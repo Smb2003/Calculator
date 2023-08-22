@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>CALCULATOR JS</title>
+</head>
+<body>
+    <div class="content">
+        <div class="button">
+            
+            <input type="text" name="" id="inp" placeholder="0">
+            <button onclick="Clr()" class="lightgray">AC</button>
+            <button onclick="Clr()"class="lightgray">DEL</button>
+            <button onclick="Calculate('%')"class="Orange">%</button>
+            <button onclick="Calculate('/')"class="Orange">/</button>
+            <button onclick="Calculate(7)"class="gray">7</button>
+            <button onclick="Calculate(8)"class="gray">8</button>
+            <button onclick="Calculate(9)"class="gray">9</button>
+            <button onclick="Calculate('*')"class="Orange">*</button>
+            <button onclick="Calculate(4)"class="gray">4</button>
+            <button onclick="Calculate(5)"class="gray">5</button>
+            <button onclick="Calculate(6)"class="gray">6</button>
+            <button onclick="Calculate('-')"class="Orange">-</button>
+            <button onclick="Calculate(1)"class="gray">1</button>
+            <button onclick="Calculate(2)"class="gray">2</button>
+            <button onclick="Calculate(3)"class="gray">3</button>
+            <button onclick="Calculate('+')"class="Orange">+</button>
+            <button onclick="Calculate(0)"class="gray">0</button>
+            <button onclick="Calculate('.')"class="gray">.</button>
+            <button onclick="result()" id="result">=</button>
+        </div>
+    </div>
+    <script>
+        let val= document.getElementById("inp");
+        
+        function Calculate(v){
+            val.value+=v;
+        }
+        function Clr(){
+            val.value=" ";
+        }
+        function result(){
+            val.value=eval(val.value);
+        }
+    </script>
+    
+</body>
+</html>

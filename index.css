@@ -1,0 +1,66 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    /* background-color: rgba(0, 0, 0, 0.896); */
+}
+.content{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    margin-top:100px ;
+    
+}
+.button{
+    display: grid;
+    grid-template-columns: repeat(4,65px);
+    border-radius: 28px;
+    padding: 16px;
+    background-color: black;
+    
+    box-shadow: 17px 15px 19px whitesmoke,inset 6px 6px 13px rgba(128, 128, 128, 0.177);;
+}
+input{
+    grid-column: span 4;
+    box-shadow: inset -6px -6px 13px rgba(29, 18, 18, 0.232) 
+     , inset 6px 6px 13px rgba(128, 128, 128, 0.177);
+     text-align: end;
+     border: none;
+     color: black;
+     border-radius: 16px;
+     height: 58px;
+     width: 252px;
+     font-size: 40px;
+     margin: 40px 0px 30px 0px;
+     padding-right: 5px;
+   
+}
+button{
+    box-shadow:  6px 6px 13px rgba(229, 214, 214, 0.232) 
+    ,  6px 6px 10px rgba(128, 128, 128, 0.177);
+    padding: 10px;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+  
+}
+#result{
+    width: 115px;
+    border-radius: 30px;
+    background-color: orangered;
+}
+
+.lightgray{
+    background-color: rgb(145, 158, 171);
+}
+.gray{
+    background-color: grey;   
+}
+.Orange{
+    background-color: orangered;
+}
